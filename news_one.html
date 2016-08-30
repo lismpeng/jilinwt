@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <script src="js/angular.min.js"></script>
+    <link href="css/base.css" rel="stylesheet">
+    <script src="js/js.js"></script>
+    <script>
+        var myApp = angular.module("myApp",[]);
+        myApp.controller("newsCtrl",function($scope){
+            $scope.data1Top = [
+                {title:"万通集团盛泰生物制品工程奠基仪式隆重举行","new":"2016年8月1日上午，万通集团盛泰生物制品工程工地上，奠基仪式大型主题背景板与项目简介并排巍然屹立。万通集团员工与医药高新区干部共四百多人，分列成四个方队，等候市领导的检阅。","time":"2016-08-10"},
+                {title:"万通集团总裁潘葳荣获“中国医药行业十大新锐人物”","new":"2015中国医药行业十大新锐人物、2015中国医药制造业百强企业、2015中国医药行业成长50强企业","time":"2016-08-08"}
+            ];
+            $scope.data1 = [
+                    {"new":"突出服务意识与协作精神，专注创新，实现集团超常规发展！","time":"2016-08-10"},
+                    {"new":"吉林省委常委、省委统战部部长姜治莹莅临万通调研工作","time":"2016-08-08"},
+                    {"new":"吉林万通集团董事长潘首德看望“吉林好人”丁传红","time":"2016-08-06"},
+                    {"new":"打造万通第一品牌熔炼培训师精英团队","time":"2016-08-04"},
+                    {"new":"董事长潘首德荣获吉林省优秀党务工作者标兵殊荣","time":"2016-08-02"},
+                    {"new":"吉林省国税局局长梅昌新深入万通进行实地调研","time":"2016-08-00"},
+                    {"new":"北京吉林商会嘉宾莅临万通观摩调研","time":"2016-07-28"},
+                    {"new":"大承学院专家团莅临万通考察调研","time":"2016-07-26"},
+                    {"new":"2016吉林省药品生产企业QC小组发布会在万通集团隆重举行","time":"2016-07-24"},
+                    {"new":"吉林省医药行业协会2016年工作会议在通化万通药业隆重召开","time":"2016-07-22"},
+                    {"new":"推进药企“两票制”改革座谈会 在通化万通举行","time":"2016-07-20"}
+                ];
+
+            $scope.data2Top = [
+                {title:"第九届全球药品监管机构首脑峰会在北京召开","new":"2014年11月19日，第九届全球药品监管机构首脑峰会在北京隆重召开，来自美国、欧盟、澳大利亚、日本、金砖国家、世界卫生组织等25个国家和国际组织的药品监管机构负责人出席了此次全球...","time":"2015-12-08"},
+                {title:"边振甲会见美国食品药品管理局助理局长一行","new":"2013年12月12日，国家食品药品监督管理总局党组成员边振甲同志会见了美国食品药品管理局助理局长琳达•托尔夫森一行。双方交流了中美两国食品安全监 管情况，讨论了食品安全监管法规...","time":"2016-07-08"}
+            ];
+
+            $scope.data2 = [
+                {"new":"医改驱动医疗服务领域遍地开花 结构性机会频现","time":"2016.05.23"},
+                {"new":"国务院：推进异地就医结算 构建新医疗薪酬制度","time":"2016.04.07"},
+                {"new":"2015年度药品审评报告","time":"2016.03.04"},
+                {"new":"于文明副局长出席国务院政策例行吹风会解读《中医药发展战略规划纲要（2016—2030年）》","time":"2016.02.23"},
+                {"new":"首个国家级规划为中医药发展创机遇","time":"2016.02.23"},
+                {"new":"食品药品监管总局公开征求对药品经营质量管理规范修订的意见","time":"2016.02.22"},
+                {"new":"关于暂停执行2015年1号公告药品电子监管有关规定的公告（2016年第40号）","time":"2016.02.22"},
+                {"new":"中医药法（草案）全文征求意见","time":"2016.01.20"},
+                {"new":"中医药法草案:个人可通过考核获中医医师资格并开诊所","time":"2015.12.21"},
+                {"new":"“互联网+”将深刻影响传统医药行业","time":"2015.12.18"},
+                {"new":"90药企惊恐撤回药品注册，震荡药圈！","time":"2015.12.07"}
+
+            ];
+
+            $scope.data3Top = [
+                {title:"吉林省团省委书记程龙一行到万通药业集团调研","new":"2014年4月23日上午，团省委书记程龙一行在市委副书记王立平、团市委书记姜文科，东昌区委副书记郭永禾等领导的陪同下来到我集团开展调研工作","time":"2016-06-08"},
+                {title:"吉林万通药业集团召开党的群众路线实践活动大会","new":"4月2日，吉林万通药业集团召开党的群众路线教育实践活动动员大会。按照中央指示精神和省、市、区委的统一部署，集团党委为开好此次会议做了充分的准备。年初，根据企业发展的实际情况...","time":"2016-07-08"}
+            ];
+
+            $scope.data3 = [
+                {"new":"团中央统战部副部长王婷莅临万通调研团建工作","time":"2016.08.08"},
+                {"new":"纪念建党95周年缅怀革命先烈重温入党誓词做合格党员实践活动","time":"2016.06.27"},
+                {"new":"老人家，感冒请吃万通感通片","time":"2016.03.04"},
+                {"new":"万通药业集团党委副书记高万林讲授专题党课","time":"2015.11.06"},
+                {"new":"“中国梦，劳动美，我与改革创新”演讲比赛金秋激情开讲","time":"2015.11.06"},
+                {"new":"吉林万通药业集团履行诺言继续出资救助东昌区10名小学生","time":"2015.09.29"},
+                {"new":"共青团省委书记程龙来天露葡萄酒公司调研","time":"2014.12.24"},
+                {"new":"吉林万通药业集团履行诺言继续出资救助东昌区10名小学生","time":"2014.09.29"},
+                {"new":"万通药业副总经理陈亚双被团省委授予“吉林好青年”称号","time":"2014.08.12"},
+                {"new":"吉林万通药业集团 趣味运动会","time":"2014.06.03"},
+                {"new":"市委第五督导组深入万通集团调研党的群众路线教育实践活动开展情况","time":"2014.05.23"}
+
+            ];
+            $scope.data4Top = [
+                {title:"通化万通药业股份有限公司股东信息记公告","new":"2016年8月1日上午，万通集团盛泰生物制品工程工地上，奠基仪式大型主题背景板与项目简介并排巍然屹立。万通集团员工与医药高新区干部共四百多人，分列成四个方队，等候市领导的检阅。","time":"2016-06-08"},
+                {title:"通化万通药业股及暂停变更登记公告","new":"2015中国医药行业十大新锐人物、2015中国医药制造业百强企业、2015中国医药行业成长50强企业","time":"2016-07-08"}
+            ];
+            $scope.data4 = [
+                {"new":"吉林万通药业集团梅河药业股份有限公司2016年第一次临时股东大会通知公告","time":"2016.04.05"},
+                {"new":"通化万通药业股份有限公司股东信息核查及暂停变更登记公告","time":"2016.03.17"},
+                {"new":"吉林万通药业集团梅河药业股份有限公司股东信息核查及暂停变更登记公告","time":"2016.03.08"},
+                {"new":"关于股东未进行股份确权需进行登记的通知","time":"2015.12.03"},
+                {"new":"通化万通药业股份有限公司股东信息核查及暂停变更登记公告","time":"2015.11.05"}
+            ];
+            });
+    </script>
+</head>
+<body ng-controller="newsCtrl">
+<div class="top">
+    <div class="banner-bg about-top-bg">
+        <div class="module"></div>
+        <div class="nav fr">
+            <div class="nav-shadow"></div>
+            <div  id="showId" class="top-nav">
+                <h2><a class="aColor" href="index.html">首页<span>home</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul></ul>
+                </h2>
+                <h2 class="show1"><a class="aColor" href="news_one.html">新闻中心<span>news</span></a><img class="hover show" src="images/nav-hover_02.png">
+                    <ul class="subNav subNavNews">
+                        <span></span>
+                        <i></i>
+                        <li class="sanjiao"><a href="news_one.html">药业新闻</a></li>
+                        <li><a href="news_two.html">行业动态</a></li>
+                        <li><a href="news_three.html">党团建设</a></li>
+                        <li><a href="news_four.html">股票信息</a></li>
+                        <li><a href="news_five.html">视频信息</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="product_one.html">产品中心<span>product</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav2">
+                        <span></span>
+                        <i></i>
+                        <li><a href="product_one.html">药品系列</a></li>
+                        <li><a href="product_two.html">葡萄酒系列</a></li>
+                        <li><a href="product_three.html">化妆品系列</a></li>
+                        <li><a href="product_all.html">所有产品</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="consult_one.html">咨询中心<span>consulting</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav3">
+                        <span></span>
+                        <i></i>
+                        <li><a href="consult_one.html">常见问题</a></li>
+                        <li><a href="consult_two.html">留言板</a></li>
+                        <li><a href="consult_three.html">厂检下载</a></li>
+                        <li><a href="consult_four.html">关于我们</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="recruit_one.html">招聘中心<span>recruit</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav4">
+                        <span></span>
+                        <i></i>
+                        <li><a href="recruit_one.html">人才战略</a></li>
+                        <li><a href="recruit_two.html">最新招聘</a></li>
+                        <li><a href="recruit_three.html">毛遂自荐</a></li>
+                    </ul>
+                </h2>
+                <h2><a class="aColor" href="about_one.html">关于我们<span>about us</span></a><img class="hover" src="images/nav-hover_02.png">
+                    <ul class="subNav subNav5">
+                        <span></span>
+                        <i></i>
+                        <li><a href="about_one.html">万通风采</a></li>
+                        <li><a href="about_two.html">企业文化</a></li>
+                        <li><a href="about_three.html">产品研发</a></li>
+                    </ul>
+                </h2>
+            </div>
+            <i><img src="images/nav-bg_01.png"></i>
+        </div>
+        <div class="logo">
+            <img src="images/top-logo_03.png">
+            <h2>吉林万通药业集团</h2>
+            <p>Jilin WanTong Pharmaceutical Group</p>
+        </div>
+    </div>
+</div>
+<div class="about-content">
+    <div class="inner clearfix">
+        <div class="subnav fl">
+            <ul id="submenu">
+                <li class="show"><a href="news_one.html" class="bianse">药业新闻<span>movment</span></a><i class="hoverNav"></i></li>
+                <li><a href="news_two.html">行业动态<span>about</span></a><i></i></li>
+                <li><a href="news_three.html">党团建设<span>party</span></a><i></i></li>
+                <li><a href="news_four.html">股票信息<span>shares</span></a><i></i></li>
+                <li><a href="news_five.html">视频信息<span>video</span></a><i></i></li>
+            </ul>
+        </div>
+        <div class="content-r fl">
+            <div class="pageHeader">您的位置 - 首页 - 新闻中心 - <span>药业新闻</span></div>
+            <div class="titleA">
+                <h2>药业新闻<span>movement</span></h2>
+            </div>
+            <div class="content_bg clearfix">
+                <img ng-src="images/news-pic1.jpg">
+                <div class="text fl">
+                    <div class="textTab" ng-repeat="content in data1Top">
+                        <h2><a href="#">{{content.title}}</a></h2>
+                        <p>{{content.new}}</p>
+                        <br><span><a href="#">{{content.time}}</a></span>
+                    </div>
+                </div>
+            </div>
+            <div class="content-b">
+                <ul ng-repeat="content in data1">
+                    <li><a href="#">{{content.new}}<span>{{content.time}}</span></a></li>
+                </ul>
+                <div class="pageA clearfix">
+                    <ul>
+                        <li class="active">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                    </ul>
+                    <p>第一页</p>
+                    <p>最后一页</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="module"></div>
+    <div class="footer-content inner">
+        <p>版权所有：通化万通药业股份有限公司 Copyright © 2016 wtyy.com. All rights reserved.</p>
+        <p>公司地址：吉林省通化市万通路66号|联系电话：0435-3945555|传真：0435-3315425|邮箱：webmaster@wtyy.com</p>
+        <p>互联网药品信息服务资格证书号：（吉）-非经营性-2013-0006      网站ICP备案序号：吉ICP备13003052号</p>
+    </div>
+</div>
+</body>
+</html>
